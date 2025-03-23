@@ -1,0 +1,12 @@
+
+node_modules/
+dist/
+out/
+.env
+playwright-report/
+reports/
+test-results/
+
+
+
+
