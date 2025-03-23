@@ -14,10 +14,13 @@ CLIENT_SECRET=your-client-secret
 npm run test:api          # Run only API tests
 npm run test:api:report   # Run API tests with HTML report
 
+![API Test Report](docs/images/api automation report 2.png)
 
 # To ru nUI tests
 npm run test:ui           # Run only UI tests
 npm run test:ui:report    # Run UI tests with Extent Report
+
+![UI Test Report](docs/images/ui automation report.png)
 
 
 
@@ -26,3 +29,6 @@ node generateReport.js
 
 # To open a report
 start ./reports/html/index.html
+
+
+![Alt text](relative/path/to/image.png)
