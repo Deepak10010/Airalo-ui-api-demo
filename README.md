@@ -31,4 +31,4 @@ node generateReport.js
 start ./reports/html/index.html
 
 
-![Alt text](relative/path/to/image.png)
+
