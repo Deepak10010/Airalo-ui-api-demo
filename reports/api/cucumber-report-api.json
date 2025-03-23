@@ -1,0 +1,184 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\deepa\\Desktop\\Airalo\\playwright.config.ts",
+    "rootDir": "C:/Users/deepa/Desktop/Airalo/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "./reports/api/cucumber-report-api.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/deepa/Desktop/Airalo/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "UI Tests",
+        "name": "UI Tests",
+        "testDir": "C:/Users/deepa/Desktop/Airalo/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*ui\\/.*\\.spec\\.ts/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/deepa/Desktop/Airalo/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "API Tests",
+        "name": "API Tests",
+        "testDir": "C:/Users/deepa/Desktop/Airalo/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*api\\/.*\\.spec\\.ts/"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.51.1",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "api\\getEsims.spec.ts",
+      "file": "api/getEsims.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "GET eSIMs from Airalo sandbox API",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "API Tests",
+              "projectName": "API Tests",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 884,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "🔐 Access Token Response: {\n  data: {\n    token_type: \u001b[32m'Bearer'\u001b[39m,\n    expires_in: \u001b[33m86400\u001b[39m,\n    access_token: \u001b[32m'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5NTgiLCJqdGkiOiI5OTNiZWE3OTRkNGMwOGM3YjIxNDBmZmJkZWI1NDIyNzQ0ZTc4YjQ0MWM3MDMyNTRjMmViOWRlNzFlMTNhMGVkZWE0MThhMjA4M2M1MDE5NSIsImlhdCI6MTc0MjY1OTEwNy4zNTc0NTksIm5iZiI6MTc0MjY1OTEwNy4zNTc0NjEsImV4cCI6MTc0Mjc0NTUwNy4zNTQ4MDIsInN1YiI6IiIsInNjb3BlcyI6W119.VZfww_3FJweEm3d6aor16uun-DQbjbL8dXgTDos-jCexl_4dIfhQDjv6RUMY-sXXKQnbHpLMX7YL44oi4V5m4XXfPst9TAzssi2YEq3RyDQPPmBquQ9GseTFvj7e3Xl6mVf5dFn-lUoPaxVRGtrzb6ZhM-rRI-0GaG-DbqPXzLKbxS0EVdQEAvSehMmCyCfXo8rdASyAR7AgZGSoNcuUYucvzCdUxPDNbCYItYRLKO2hyKmpcWtIQwPHjK-IXa1T2LI3sN_UEnbMY30jVUTiMy8L04gTDxv0tEtfchhI4yi1z9Nzu6tCLvkr5Ys6rzmfGBUbaN_349eRe4AogSbiuH19QS13huK0zea1j4TWx7mqSslBhc2wtLo8n05YsQiPg19erkI5VDgAuAx_17EzmHpDyns2_SuT59gMkx80nRGhfAcA1p-q56FxSAmgex-cVULPzr35fR4I2BXlwE9DbYH04lhEBxbCOhwFlsZFPagg9VUla5we7Z-OiQoXUrOVDSJS5fLBdhzB9JqeVJEVNJGcqGwQvh8C9wVol_Recnpk_WYGMWjny9FoPCUjrYh2JWS8aMiGITLDRpAuYpasYL7mCsAUrpsomw-pPoj0t_jGBLyrv_1vRyZMCxavA6st28yiQf3yau0QNgMdM3okHygVXSm3heDs2UJHpL7zOQo'\u001b[39m\n  },\n  meta: { message: \u001b[32m'success'\u001b[39m }\n}\n"
+                    },
+                    {
+                      "text": "{\n  data: [\n    {\n      id: \u001b[33m239645\u001b[39m,\n      created_at: \u001b[32m'2025-03-22 15:55:47'\u001b[39m,\n      iccid: \u001b[32m'894000000000071960'\u001b[39m,\n      lpa: \u001b[32m'lpa.airalo.com'\u001b[39m,\n      imsis: \u001b[1mnull\u001b[22m,\n      matching_id: \u001b[32m'TEST'\u001b[39m,\n      confirmation_code: \u001b[1mnull\u001b[22m,\n      qrcode: \u001b[32m'LPA:1$lpa.airalo.com$TEST'\u001b[39m,\n      qrcode_url: \u001b[32m'https://sandbox.airalo.com/qr?expires=1828972547&id=275414&signature=e44ed25bb2f913981991663bcce4c77baf1aabeb9b716a8aae3b6782bd2d36b8'\u001b[39m,\n      direct_apple_installation_url: \u001b[32m'https://esimsetup.apple.com/esim_qrcode_provisioning?carddata=LPA:1$lpa.airalo.com$TEST'\u001b[39m,\n      voucher_code: \u001b[1mnull\u001b[22m,\n      airalo_code: \u001b[1mnull\u001b[22m,\n      apn_type: \u001b[32m'automatic'\u001b[39m,\n      apn_value: \u001b[1mnull\u001b[22m,\n      is_roaming: \u001b[33mtrue\u001b[39m,\n      brand_settings_name: \u001b[1mnull\u001b[22m,\n      msisdn: \u001b[1mnull\u001b[22m,\n      apn: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[33m239644\u001b[39m,\n      created_at: \u001b[32m'2025-03-22 15:53:45'\u001b[39m,\n      iccid: \u001b[32m'894000000000071959'\u001b[39m,\n      lpa: \u001b[32m'lpa.airalo.com'\u001b[39m,\n      imsis: \u001b[1mnull\u001b[22m,\n      matching_id: \u001b[32m'TEST'\u001b[39m,\n      confirmation_code: \u001b[1mnull\u001b[22m,\n      qrcode: \u001b[32m'LPA:1$lpa.airalo.com$TEST'\u001b[39m,\n      qrcode_url: \u001b[32m'https://sandbox.airalo.com/qr?expires=1828972425&id=275413&signature=4c0232c8d3c3263fde9df1dd5a50bda48da7f9d75732c76ac026eea4ca367fd4'\u001b[39m,\n      direct_apple_installation_url: \u001b[32m'https://esimsetup.apple.com/esim_qrcode_provisioning?carddata=LPA:1$lpa.airalo.com$TEST'\u001b[39m,\n      voucher_code: \u001b[1mnull\u001b[22m,\n      airalo_code: \u001b[1mnull\u001b[22m,\n      apn_type: \u001b[32m'automatic'\u001b[39m,\n      apn_value: \u001b[1mnull\u001b[22m,\n      is_roaming: \u001b[33mtrue\u001b[39m,\n      brand_settings_name: \u001b[1mnull\u001b[22m,\n      msisdn: \u001b[1mnull\u001b[22m,\n      apn: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[33m239643\u001b[39m,\n      created_at: \u001b[32m'2025-03-22 15:49:51'\u001b[39m,\n      iccid: \u001b[32m'894000000000071958'\u001b[39m,\n      lpa: \u001b[32m'lpa.airalo.com'\u001b[39m,\n      imsis: \u001b[1mnull\u001b[22m,\n      matching_id: \u001b[32m'TEST'\u001b[39m,\n      confirmation_code: \u001b[1mnull\u001b[22m,\n      qrcode: \u001b[32m'LPA:1$lpa.airalo.com$TEST'\u001b[39m,\n      qrcode_url: \u001b[32m'https://sandbox.airalo.com/qr?expires=1828972191&id=275412&signature=11aff3f276f68be754e066be8ba2561eebd4e64d0ae0949078cf9e906cb0ea17'\u001b[39m,\n      direct_apple_installation_url: \u001b[32m'https://esimsetup.apple.com/esim_qrcode_provisioning?carddata=LPA:1$lpa.airalo.com$TEST'\u001b[39m,\n      voucher_code: \u001b[1mnull\u001b[22m,\n      airalo_code: \u001b[1mnull\u001b[22m,\n      apn_type: \u001b[32m'automatic'\u001b[39m,\n      apn_value: \u001b[1mnull\u001b[22m,\n      is_roaming: \u001b[33mtrue\u001b[39m,\n      brand_settings_name: \u001b[1mnull\u001b[22m,\n      msisdn: \u001b[1mnull\u001b[22m,\n      apn: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[33m239638\u001b[39m,\n      created_at: \u001b[32m'2025-03-22 13:12:03'\u001b[39m,\n      iccid: \u001b[32m'894000000000071953'\u001b[39m,\n      lpa: \u001b[32m'lpa.airalo.com'\u001b[39m,\n      imsis: \u001b[1mnull\u001b[22m,\n      matching_id: \u001b[32m'TEST'\u001b[39m,\n      confirmation_code: \u001b[1mnull\u001b[22m,\n      qrcode: \u001b[32m'LPA:1$lpa.airalo.com$TEST'\u001b[39m,\n      qrcode_url: \u001b[32m'https://sandbox.airalo.com/qr?expires=1828962722&id=275407&signature=7834bfee96c6247fa0d258291c5170b7481c1a558f8279230db81ea2a08abc2f'\u001b[39m,\n      direct_apple_installation_url: \u001b[32m'https://esimsetup.apple.com/esim_qrcode_provisioning?carddata=LPA:1$lpa.airalo.com$TEST'\u001b[39m,\n      voucher_code: \u001b[1mnull\u001b[22m,\n      airalo_code: \u001b[1mnull\u001b[22m,\n      apn_type: \u001b[32m'automatic'\u001b[39m,\n      apn_value: \u001b[1mnull\u001b[22m,\n      is_roaming: \u001b[33mtrue\u001b[39m,\n      brand_settings_name: \u001b[1mnull\u001b[22m,\n      msisdn: \u001b[1mnull\u001b[22m,\n      apn: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[33m239637\u001b[39m,\n      created_at: \u001b[32m'2025-03-22 13:10:53'\u001b[39m,\n      iccid: \u001b[32m'894000000000071952'\u001b[39m,\n      lpa: \u001b[32m'lpa.airalo.com'\u001b[39m,\n      imsis: \u001b[1mnull\u001b[22m,\n      matching_id: \u001b[32m'TEST'\u001b[39m,\n      confirmation_code: \u001b[1mnull\u001b[22m,\n      qrcode: \u001b[32m'LPA:1$lpa.airalo.com$TEST'\u001b[39m,\n      qrcode_url: \u001b[32m'https://sandbox.airalo.com/qr?expires=1828962653&id=275406&signature=71ed4e6ae043be2874a7b0dbe4e56a9115ac52785df7830f268f91908d867ab6'\u001b[39m,\n      direct_apple_installation_url: \u001b[32m'https://esimsetup.apple.com/esim_qrcode_provisioning?carddata=LPA:1$lpa.airalo.com$TEST'\u001b[39m,\n      voucher_code: \u001b[1mnull\u001b[22m,\n      airalo_code: \u001b[1mnull\u001b[22m,\n      apn_type: \u001b[32m'automatic'\u001b[39m,\n      apn_value: \u001b[1mnull\u001b[22m,\n      is_roaming: \u001b[33mtrue\u001b[39m,\n      brand_settings_name: \u001b[1mnull\u001b[22m,\n      msisdn: \u001b[1mnull\u001b[22m,\n      apn: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[33m239636\u001b[39m,\n      created_at: \u001b[32m'2025-03-22 13:10:07'\u001b[39m,\n      iccid: \u001b[32m'894000000000071951'\u001b[39m,\n      lpa: \u001b[32m'lpa.airalo.com'\u001b[39m,\n      imsis: \u001b[1mnull\u001b[22m,\n      matching_id: \u001b[32m'TEST'\u001b[39m,\n      confirmation_code: \u001b[1mnull\u001b[22m,\n      qrcode: \u001b[32m'LPA:1$lpa.airalo.com$TEST'\u001b[39m,\n      qrcode_url: \u001b[32m'https://sandbox.airalo.com/qr?expires=1828962607&id=275405&signature=9e7054f713c2887cb84926b6c7223092efbd675910d3cd1bdbf2f9ae1e322c5c'\u001b[39m,\n      direct_apple_installation_url: \u001b[32m'https://esimsetup.apple.com/esim_qrcode_provisioning?carddata=LPA:1$lpa.airalo.com$TEST'\u001b[39m,\n      voucher_code: \u001b[1mnull\u001b[22m,\n      airalo_code: \u001b[1mnull\u001b[22m,\n      apn_type: \u001b[32m'automatic'\u001b[39m,\n      apn_value: \u001b[1mnull\u001b[22m,\n      is_roaming: \u001b[33mtrue\u001b[39m,\n      brand_settings_name: \u001b[1mnull\u001b[22m,\n      msisdn: \u001b[1mnull\u001b[22m,\n      apn: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[33m239634\u001b[39m,\n      created_at: \u001b[32m'2025-03-22 13:07:17'\u001b[39m,\n      iccid: \u001b[32m'894000000000071949'\u001b[39m,\n      lpa: \u001b[32m'lpa.airalo.com'\u001b[39m,\n      imsis: \u001b[1mnull\u001b[22m,\n      matching_id: \u001b[32m'TEST'\u001b[39m,\n      confirmation_code: \u001b[1mnull\u001b[22m,\n      qrcode: \u001b[32m'LPA:1$lpa.airalo.com$TEST'\u001b[39m,\n      qrcode_url: \u001b[32m'https://sandbox.airalo.com/qr?expires=1828962437&id=275403&signature=9729d9066562c857c3798bde20802203c4febd7a0f0782f7077d83c224c80641'\u001b[39m,\n      direct_apple_installation_url: \u001b[32m'https://esimsetup.apple.com/esim_qrcode_provisioning?carddata=LPA:1$lpa.airalo.com$TEST'\u001b[39m,\n      voucher_code: \u001b[1mnull\u001b[22m,\n      airalo_code: \u001b[1mnull\u001b[22m,\n      apn_type: \u001b[32m'automatic'\u001b[39m,\n      apn_value: \u001b[1mnull\u001b[22m,\n      is_roaming: \u001b[33mtrue\u001b[39m,\n      brand_settings_name: \u001b[1mnull\u001b[22m,\n      msisdn: \u001b[1mnull\u001b[22m,\n      apn: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[33m239633\u001b[39m,\n      created_at: \u001b[32m'2025-03-22 12:57:24'\u001b[39m,\n      iccid: \u001b[32m'894000000000071948'\u001b[39m,\n      lpa: \u001b[32m'lpa.airalo.com'\u001b[39m,\n      imsis: \u001b[1mnull\u001b[22m,\n      matching_id: \u001b[32m'TEST'\u001b[39m,\n      confirmation_code: \u001b[1mnull\u001b[22m,\n      qrcode: \u001b[32m'LPA:1$lpa.airalo.com$TEST'\u001b[39m,\n      qrcode_url: \u001b[32m'https://sandbox.airalo.com/qr?expires=1828961844&id=275402&signature=b9ab3bf2e92564e53619703352781fe0f78d70e34de7cc5c2130406ce161c491'\u001b[39m,\n      direct_apple_installation_url: \u001b[32m'https://esimsetup.apple.com/esim_qrcode_provisioning?carddata=LPA:1$lpa.airalo.com$TEST'\u001b[39m,\n      voucher_code: \u001b[1mnull\u001b[22m,\n      airalo_code: \u001b[1mnull\u001b[22m,\n      apn_type: \u001b[32m'automatic'\u001b[39m,\n      apn_value: \u001b[1mnull\u001b[22m,\n      is_roaming: \u001b[33mtrue\u001b[39m,\n      brand_settings_name: \u001b[1mnull\u001b[22m,\n      msisdn: \u001b[1mnull\u001b[22m,\n      apn: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[33m239566\u001b[39m,\n      created_at: \u001b[32m'2025-03-21 19:39:12'\u001b[39m,\n      iccid: \u001b[32m'894000000000071880'\u001b[39m,\n      lpa: \u001b[32m'lpa.airalo.com'\u001b[39m,\n      imsis: \u001b[1mnull\u001b[22m,\n      matching_id: \u001b[32m'TEST'\u001b[39m,\n      confirmation_code: \u001b[1mnull\u001b[22m,\n      qrcode: \u001b[32m'LPA:1$lpa.airalo.com$TEST'\u001b[39m,\n      qrcode_url: \u001b[32m'https://sandbox.airalo.com/qr?expires=1828899552&id=275335&signature=31266120316b01710d54f3ebe37d4ffa39a87b5ed5323615129b6ce7e000e82c'\u001b[39m,\n      direct_apple_installation_url: \u001b[32m'https://esimsetup.apple.com/esim_qrcode_provisioning?carddata=LPA:1$lpa.airalo.com$TEST'\u001b[39m,\n      voucher_code: \u001b[1mnull\u001b[22m,\n      airalo_code: \u001b[1mnull\u001b[22m,\n      apn_type: \u001b[32m'manual'\u001b[39m,\n      apn_value: \u001b[32m'airalo2'\u001b[39m,\n      is_roaming: \u001b[33mtrue\u001b[39m,\n      brand_settings_name: \u001b[1mnull\u001b[22m,\n      msisdn: \u001b[1mnull\u001b[22m,\n      apn: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[33m239565\u001b[39m,\n      created_at: \u001b[32m'2025-03-21 19:39:12'\u001b[39m,\n      iccid: \u001b[32m'894000000000071879'\u001b[39m,\n      lpa: \u001b[32m'lpa.airalo.com'\u001b[39m,\n      imsis: \u001b[1mnull\u001b[22m,\n      matching_id: \u001b[32m'TEST'\u001b[39m,\n      confirmation_code: \u001b[1mnull\u001b[22m,\n      qrcode: \u001b[32m'LPA:1$lpa.airalo.com$TEST'\u001b[39m,\n      qrcode_url: \u001b[32m'https://sandbox.airalo.com/qr?expires=1828899552&id=275334&signature=c86d95c1e24b2915d54f44a90843761ae1d7c4bd51cebd464a3cc6ef4c6bbb0d'\u001b[39m,\n      direct_apple_installation_url: \u001b[32m'https://esimsetup.apple.com/esim_qrcode_provisioning?carddata=LPA:1$lpa.airalo.com$TEST'\u001b[39m,\n      voucher_code: \u001b[1mnull\u001b[22m,\n      airalo_code: \u001b[1mnull\u001b[22m,\n      apn_type: \u001b[32m'manual'\u001b[39m,\n      apn_value: \u001b[32m'airalo2'\u001b[39m,\n      is_roaming: \u001b[33mtrue\u001b[39m,\n      brand_settings_name: \u001b[1mnull\u001b[22m,\n      msisdn: \u001b[1mnull\u001b[22m,\n      apn: \u001b[36m[Object]\u001b[39m\n    }\n  ],\n  links: {\n    first: \u001b[32m'https://sandbox-partners-api.airalo.com/v2/sims?limit=10&page=1'\u001b[39m,\n    last: \u001b[32m'https://sandbox-partners-api.airalo.com/v2/sims?limit=10&page=847'\u001b[39m,\n    prev: \u001b[1mnull\u001b[22m,\n    next: \u001b[32m'https://sandbox-partners-api.airalo.com/v2/sims?limit=10&page=2'\u001b[39m\n  },\n  meta: {\n    message: \u001b[32m'success'\u001b[39m,\n    current_page: \u001b[33m1\u001b[39m,\n    from: \u001b[33m1\u001b[39m,\n    last_page: \u001b[33m847\u001b[39m,\n    path: \u001b[32m'https://sandbox-partners-api.airalo.com/v2/sims'\u001b[39m,\n    per_page: \u001b[32m'10'\u001b[39m,\n    to: \u001b[33m10\u001b[39m,\n    total: \u001b[33m8467\u001b[39m\n  }\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-03-22T15:58:27.106Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "96c38dc5e725c5030f39-2713c3720790997b385e",
+          "file": "api/getEsims.spec.ts",
+          "line": 5,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "api\\postOrder.spec.ts",
+      "file": "api/postOrder.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Submit Order for kallur-digital-7days-1gb eSIM",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "API Tests",
+              "projectName": "API Tests",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1511,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "🔐 Access Token Response: {\n  data: {\n    token_type: \u001b[32m'Bearer'\u001b[39m,\n    expires_in: \u001b[33m86400\u001b[39m,\n    access_token: \u001b[32m'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5NTgiLCJqdGkiOiIxMjRkOWU4N2QyMzBlZThiYWRiYjA4ODY0YTlhYzY5N2JiOWI3MGU1M2JlZmYzMjBlZmFjMjZiYjM4MmIyNWZkNTBiZDExZTBmMDM3MGQzZSIsImlhdCI6MTc0MjY1OTEwNy4zNDYzMjEsIm5iZiI6MTc0MjY1OTEwNy4zNDYzMjMsImV4cCI6MTc0Mjc0NTUwNy4zNDQyOTcsInN1YiI6IiIsInNjb3BlcyI6W119.mXjhkY8KwW8qKzYPVn3e0vlMFdBMJz5WZwLqqY6GLDQU78vjxFogzLmp_iQmLB9NblNQuUdb0D8XZzy36J7Ch281EiuZKSVy0lQ9qC8YsGj5XzZ2bP7rj8j42totV-UoTmPcz6TSPZ6vx_wUVQRIz9LlHaP3BUhibAl7n7aeN0rojU9b_djx_6iTKugA8_73oQDmYQOZAQBn-0KynrHXAKmjDFqIOyQfejvUSRv4LhR0qCOFCKGp8b5zLMN0DTTYeqJCQLQ7eUWjfXKER8Bti7an-wKeapSpnVIcTE-K9-Hci0BoG0Ndg65bxHo7p539YMHau_36z6uKPn0SAfv62PvIE2O53hFGAPImZ9Lzx1gCGUMh-eLrURkcHFEjt8JXULdx_O8mgGaOI7_LAdAQaIom90zI_zeGBBI3TQBnWpvMfAZfWTH_wVikF_XHd5PQTZ6zPGlGovD8RPpJFMsI2OFD8xNos56q3S7Ap6u8NeCf-8iVN0HjKNIN2vpWvv_FAWQq0lL6kcKJBY36Z4KQd3ZAZWRt9isebVatc6dWc5o_WU7p4WmVVYRd1mbioHHTyhE-RZRLTzIfyNvQTY6btTyh2T93QJNIMns5cUX7t8oLrs_AzdRf6mjRaofG_WxcILTSZEt3Jq5E0IiZE8IaCHNZs2Xq6Xf-rgLw8RaF8-E'\u001b[39m\n  },\n  meta: { message: \u001b[32m'success'\u001b[39m }\n}\n"
+                    },
+                    {
+                      "text": "📦 Order Response: {\n  data: {\n    id: \u001b[33m163886\u001b[39m,\n    code: \u001b[32m'20250322-163886'\u001b[39m,\n    currency: \u001b[32m'USD'\u001b[39m,\n    package_id: \u001b[32m'kallur-digital-7days-1gb'\u001b[39m,\n    quantity: \u001b[33m1\u001b[39m,\n    type: \u001b[32m'sim'\u001b[39m,\n    description: \u001b[32m'Example description to identify the order'\u001b[39m,\n    esim_type: \u001b[32m'Prepaid'\u001b[39m,\n    validity: \u001b[33m7\u001b[39m,\n    package: \u001b[32m'Kallur Digital-1 GB - 7 Days'\u001b[39m,\n    data: \u001b[32m'1 GB'\u001b[39m,\n    price: \u001b[33m9.5\u001b[39m,\n    created_at: \u001b[32m'2025-03-22 15:58:28'\u001b[39m,\n    manual_installation: \u001b[32m'<p><b>eSIM name: </b>Kallur Digital</p><p><b>Coverage:</b> Faroe Islands</p><p><b>To manually activate the eSIM on your eSIM capable device:</b></p><p>1. Settings> Cellular/Mobile> Add Cellular/Mobile Plan.</p><p>2. Manually enter the SM-DP+ Address and activation code.</p><p>3. Confirm the eSIM plan details</p><p>4. Label the eSIM.</p><p><b>To access Data:</b></p><p>1. Enable data roaming.</p>'\u001b[39m,\n    qrcode_installation: \u001b[32m'<p><b>eSIM name:</b> Kallur Digital</p><p><b>Coverage: </b>Faroe Islands</p><p><b>To activate the eSIM by scanning the QR code on your eSIM capable device you need to print or display this QR code on other device:</b></p><p>1. Settings> Cellular/Mobile> Add Cellular/Mobile Plan.</p><p>2. Scan QR code</p><p>3. Confirm the eSIM plan details</p><p>4. Label the eSIM</p><p><b>To access Data:</b></p><p>1. Enable data roaming</p>'\u001b[39m,\n    installation_guides: { en: \u001b[32m'https://www.airalo.com/help/getting-started-with-airalo'\u001b[39m },\n    text: \u001b[1mnull\u001b[22m,\n    voice: \u001b[1mnull\u001b[22m,\n    net_price: \u001b[33m7.6\u001b[39m,\n    brand_settings_name: \u001b[1mnull\u001b[22m,\n    sims: [ \u001b[36m[Object]\u001b[39m ]\n  },\n  meta: { message: \u001b[32m'success'\u001b[39m }\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-03-22T15:58:27.063Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "099a8ff72d593bc18a73-fb553b867390b975d0e3",
+          "file": "api/postOrder.spec.ts",
+          "line": 5,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-03-22T15:58:25.883Z",
+    "duration": 2749.497,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

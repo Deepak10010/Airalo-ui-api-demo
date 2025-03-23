@@ -1,0 +1,40 @@
+{
+  "name": "airalo",
+  "version": "1.0.0",
+  "main": "index.js",
+ "scripts": {
+  "test:ui": "cucumber-js --require-module ts-node/register --require src/tests/ui/hooks.ts --require src/tests/ui/steps/**/*.ts src/tests/ui/features/**/*.feature --format json:./reports/ui/cucumber-report-ui.json",
+  "generate:report:ui": "node generateReport-ui.js",
+  "test:ui:report": "npm run test:ui && npm run generate:report:ui",
+
+  "test:api": "npx playwright test --project=\"API Tests\"",
+
+
+  "test:api:report":  "npx playwright test --project=\"API Tests\" && npx playwright show-report",
+
+  "open:report:api": "npx playwright show-report"
+},
+
+
+
+
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@playwright/test": "^1.51.1",
+    "@types/cucumber": "^7.0.3",
+    "@types/node": "^22.13.11",
+    "allure-commandline": "^2.33.0",
+    "dotenv": "^16.4.7",
+    "multiple-cucumber-html-reporter": "^3.9.2",
+    "playwright": "^1.51.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "form-data": "^4.0.2"
+  }
+}

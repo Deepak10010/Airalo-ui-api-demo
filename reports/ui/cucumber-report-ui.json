@@ -1,0 +1,105 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "airalo-esim-search-and-purchase-flow;user-searches-for-japan-and-verifies-package-details",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "User searches for Japan and verifies package details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 840272600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the Airalo homepage",
+            "match": {
+              "location": "src\\tests\\ui\\steps\\airaloSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2475685500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I search for the destination",
+            "match": {
+              "location": "src\\tests\\ui\\steps\\airaloSteps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1350665699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I select Japan from the Local section in autocomplete",
+            "match": {
+              "location": "src\\tests\\ui\\steps\\airaloSteps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1485870800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I click Buy Now on the paid eSIM card",
+            "match": {
+              "location": "src\\tests\\ui\\steps\\airaloSteps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1490009300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should see a popup with the following details",
+            "match": {
+              "location": "src\\tests\\ui\\steps\\airaloSteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 434915600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 570006699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "airalo-esim-search-and-purchase-flow",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Airalo eSIM search and purchase flow",
+    "tags": [],
+    "uri": "src\\tests\\ui\\features\\airaloSearch.feature"
+  }
+]
